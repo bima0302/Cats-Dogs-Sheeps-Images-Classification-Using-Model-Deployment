@@ -190,7 +190,7 @@ batch_size = 16
 
 with tf.device("/device:GPU:0"):
   history = Model.fit(Train_generator, 
-                    epochs =  15, 
+                    epochs =  20, 
                     steps_per_epoch = 6682//batch_size, 
                     validation_data = Validation_generator, 
                     verbose = 1, 
